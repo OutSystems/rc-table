@@ -1,5 +1,5 @@
 {
-  "name": "rc-table",
+  "name": "@outsystems/rc-table",
   "version": "6.8.6",
   "description": "table ui component for react",
   "keywords": [
