@@ -26,7 +26,9 @@ var build=Task("Build")
     Information("Starting Build");
     var conf = ParseJsonFromFile("package.json");
     if(conf["scripts"]["build"]!=null)
-        NpmRunScript("build");      
+        NpmRunScript("build");
+        NpmRunScript("dist");
+        NpmRunScript("compile");
     Information("Ending Build");
 });
 var tests = Task("Tests")
